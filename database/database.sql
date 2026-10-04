@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS smart_expense_tracker_new;
+
+USE smart_expense_tracker_new;
+
+CREATE TABLE IF NOT EXISTS transactions (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    amount DOUBLE DEFAULT NULL,
+    category VARCHAR(255) DEFAULT NULL,
+    title VARCHAR(255) DEFAULT NULL,
+    type VARCHAR(255) DEFAULT NULL,
+    date VARCHAR(255) DEFAULT NULL,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
